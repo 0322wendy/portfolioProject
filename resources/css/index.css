@@ -1,0 +1,23 @@
+html {
+    background-color: #F0E6EF;
+    font-family: 'Poppins', sans-serif;
+    color: #333333;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .container {
+    
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
