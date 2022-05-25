@@ -7,7 +7,7 @@ html {
 }
 
 header .container {
-    
+    max-width: 1135px;
 }
 
 ul {
