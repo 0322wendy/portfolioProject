@@ -2,26 +2,34 @@
 <html>
     <head>
         <title>wendy orellana</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+        <!-- Fading Effect -->
+        <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+        <!-- Google Material -->
+        <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
-            <div class="container">
+            <div class="header-container">
                 <div class="title">
+                    <!--
                     <div class="logo">
                         <img src="resources/images/logo-image.png" height="24" alt="wendy orellana's logo" />
-                    </div>                   
+                    </div>
+                    -->                   
                     <h1>wendy orellana</h1>
                 </div>
-                <nav>  
+                <nav class="nav" id="nav">  
                     <ul>
-                        <li><a href="#">resume</a></li>
-                        <li><a href="#">work</a></li>
-                        <li><a href="#">contact</a></li>
+                        <li><a href="/portfolioProject/resources/productdesign-resume.pdf" target="_blank">resume</a></li>
+                        <li><a href="#work">work</a></li>
+                        <li id="contact-link"><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,19 +42,21 @@
                         <img src="resources/images/intro-image.png" alt="an illustration of Wendy Orellana" />
                     </div>
                     <div class="intro-text">
-                        <h2>Hello :)</h2>
-                        <h2>I'm Wendy and I'm a full-stack developer. Let's work together!</h2>
+                        <h2><strong>Hello :)</strong></h2>
+                        <h2>I'm Wendy and I'm a full-stack developer and designer. Let's work together!</h2>
+                        <div class="social-links">
+                            <a href="mailto: w.g.orellana@gmail.com"><img src="resources/images/email.svg" /></a>
+                            <a href="https://www.linkedin.com/in/wendy-orellana-803790a6/" target="_blank"><img src="resources/images/linkedin.svg" /></a>
+                            <a href="https://github.com/0322wendy" target="_blank"><img src="resources/images/github.svg" /></a>
+                            <a href="https://www.behance.net/wendyo1" target="_blank"><img src="resources/images/behance.svg" /></a>
+                        </div>
                     </div>
-                    <div class="social-links">
-                        <a href="#"><img src="resources/images/email.svg" /></a>
-                        <a href="#"><img src="resources/images/linkedin.svg" /></a>
-                        <a href="#"><img src="resources/images/github.svg" /></a>
-                        <a href="#"><img src="resources/images/behance.svg" /></a>
-                    </div>
+                </div> 
+                <div class="scroll-container">    
                     <div class="scroll">
-                        <p>scroll down</p>
-                        <img src="resources/images/scroll-down-btn.svg" alt="arrow pointing downwards" />
-                    </div>
+                        <p id="animated">scroll down</p>
+                        <img  src="resources/images/scroll-down-btn.svg" alt="arrow pointing downwards" />
+                    </div>  
                 </div>
             </section>
             <section id="work">
@@ -54,15 +64,26 @@
                     <h2>My Work</h2>
                     <p>Here's some of the projects that I've had the pleasure of working on.</p>
                     <div class="projects-grid">
+                        <div class="project">
 
+                        </div>
+                        <div class="project">
+                            
+                        </div>
+                        <div class="project">
+                            
+                        </div>
+                        <div class="project">
+                            
+                        </div>
                     </div>
                 </div>
             </section>
-            <section id="tech\">
+            <section id="tech">
                 <div class="tech-container">
                     <h2>Technologies</h2>
                     <p>Here are a few languages and products that I've been working with recently.</p>
-                    <ul>
+                    <ul id="tech-list">
                         <li>HTML5</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
@@ -76,20 +97,23 @@
                     <h2>Get in Touch</h2>
                     <p>My inbox is always open. Whether you have a question or just want to say hi, 
                         I’ll try my best to get back to you!</p>
-                    <a href="#">Say Hello :)</a>
+                    <form action="mailto: w.g.orellana@gmail.com" >
+                        <input type="submit" value="Say Hello :)" id="button" />
+                    </form>
             </section>
         </main>
 
         <footer>
             <p>Designed & Built by Wendy :)</p>
             <div class="social-links">
-                <a href="#"><img src="resources/images/email.svg" /></a>
-                <a href="#"><img src="resources/images/linkedin.svg" /></a>
-                <a href="#"><img src="resources/images/github.svg" /></a>
-                <a href="#"><img src="resources/images/behance.svg" /></a>
+                <a href="mailto: w.g.orellana@gmail.com"><img src="resources/images/email.svg" /></a>
+                <a href="https://www.linkedin.com/in/wendy-orellana-803790a6/" target="_blank"><img src="resources/images/linkedin.svg" /></a>
+                <a href="https://github.com/0322wendy" target="_blank"><img src="resources/images/github.svg" /></a>
+                <a href="https://www.behance.net/wendyo1" target="_blank"><img src="resources/images/behance.svg" /></a>
             </div>
         </footer>
+    <script src="resources/js/index.js"></script>
     </body>
 
-    <script src="resources/js/index.js"></script>
+    
 </html>

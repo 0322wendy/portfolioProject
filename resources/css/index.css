@@ -1,18 +1,263 @@
+/* Universal Styles */
+
 html {
     background-color: #F0E6EF;
     font-family: 'Poppins', sans-serif;
     color: #333333;
     margin: 0 auto;
     text-align: center;
+    padding: 0 16px;
 }
 
-header .container {
-    max-width: 1135px;
+.social-links img {
+    margin: 4px;
+    border-radius: 3px; 
 }
 
-ul {
-    list-style: none;
+p {
+    font-size: 20px;
+    font-weight: 500;
 }
+
+h2 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+/* Header */
+
+header .header-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    justify-content: space-between;
+}
+
+header .title {
+    display: inline-block;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: 500;
+    padding: 16px;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+
+nav li:hover {
+    background-color: rgba(240, 166, 202, 0.3);
+    border-radius: 3px;
+}
+
+nav li:active {
+    background-color: rgba(240, 166, 202, 1);
+    border-radius: 3px;
+}
+
+nav li #contact-link {
+    padding-right: 0px;
+}
+
+.nav {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+    }
+}
+
+/* Intro */ 
+
+.intro-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-width: 1024px;
+    align-items: center;
+    margin-top: 128px;
+    margin-bottom: 128px;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-text {
+    flex: 1;
+    text-align: left;
+    padding: 2rem;
+}
+
+.intro-text h2 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+}
+
+.scroll-container {
+    margin-bottom: 128px;
+}
+
+.scroll p {
+    opacity: .5;
+}
+
+/* Animated Text */
+
+.wavy {
+    animation-name: wavy;
+    animation-duration: 1.3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  @keyframes wavy {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: -15px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+    .intro-container h2 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+/* My Work */
+
+.work-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.work-container p {
+    max-width: 496px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+
+.work-container .projects-grid {
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 128px;
+}
+
+.work-container .project {
+    flex: 1;
+    min-width: 400px;
+    min-height: 300px;
+    background-color: #F0A6CA;
+    border: solid #333333;
+    padding: 8px;
+}
+
+
+/* Technologies */
+
+.tech-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.tech-container p {
+    max-width: 496px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+
+.tech-container ul {
+    list-style-type: square;
+    margin-bottom: 128px;
+}
+
+.tech-container li {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#tech-list li::marker {
+    color: #9C89B8;
+    display: inline-block;  
+}
+
+/* Contact */
+
+.contact-container {
+    max-width: 496px;
+    margin: 0 auto;
+    text-align: left;
+    border: 4px solid #9C89B8;
+    border-radius: 5px;
+    padding: 32px;
+    margin-bottom: 128px;
+}
+
+.contact-container h2 {
+    margin-top: 0;
+}
+
+.contact-container p {
+    max-width: 496px;
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+
+.contact-container #button {
+    background-color: #9C89B8;
+    color: #F0E6EF;
+    padding: 12px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+}
+
+.contact-container #button:hover {
+    background-color: rgba(240, 166, 202, 1);
+    color: #F0E6EF;
+    padding: 12px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Footer */
 
 footer {
     position: relative;
@@ -20,4 +265,8 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
+}
+
+footer p {
+    font-size: 16px;
 }

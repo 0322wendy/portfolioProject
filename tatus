@@ -1,0 +1,35 @@
+[33mcommit 922b179fe12c84273f9331cdd11f9e5b6f49d16c[m[33m ([m[1;36mHEAD -> [m[1;32mcss-changes[m[33m, [m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 06c1ccc 29ca05d
+Author: Wendy :) <w.g.orellana@gmail.com>
+Date:   Wed May 25 11:45:34 2022 -0400
+
+    Merge pull request #2 from 0322wendy/first-draft
+    
+    add css into empty section
+
+[33mcommit 29ca05d137f8bc31315a3b869815904f30da6859[m[33m ([m[1;31morigin/first-draft[m[33m, [m[1;32mfirst-draft[m[33m)[m
+Author: 0322wendy <w.g.orellana@gmail.com>
+Date:   Tue May 24 22:56:04 2022 -0400
+
+    add css into empty section
+
+[33mcommit 06c1ccca353fa9e9c4da9af244020b816acbd081[m
+Merge: fc35c97 ee034a8
+Author: Wendy :) <w.g.orellana@gmail.com>
+Date:   Tue May 24 22:53:34 2022 -0400
+
+    Merge pull request #1 from 0322wendy/first-draft
+    
+    add all necessary files and images
+
+[33mcommit ee034a80d94615ae94a7a22d38050ae87ccfb8f5[m
+Author: 0322wendy <w.g.orellana@gmail.com>
+Date:   Tue May 24 22:49:34 2022 -0400
+
+    add all necessary files and images
+
+[33mcommit fc35c972050fa5ceeb8c7e915c471b78ced06cea[m
+Author: 0322wendy <w.g.orellana@gmail.com>
+Date:   Tue May 24 21:44:10 2022 -0400
+
+    first commit
