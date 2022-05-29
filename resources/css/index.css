@@ -179,7 +179,9 @@ nav li #contact-link {
     flex: 1;
     width: 100%;
     height: auto;
+    min-height: 0;
     margin: 8px;
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 600px) {
@@ -188,8 +190,12 @@ nav li #contact-link {
     }
 
     .work-container .project {
+        width: 300px;
         height: auto;
-        overflow: hidden;
+    }
+
+    html {
+        padding: 0 8px;
     }
 }
 
