@@ -215,20 +215,15 @@ nav li #contact-link {
 }
 
 .tech-container ul {
-    list-style-type: square;
+    text-align: center;
+    list-style-type: none;
     margin-bottom: 128px;
 }
 
 .tech-container li {
-    margin-top: 8px;
-    margin-bottom: 8px;
+    display: inline-block;
     font-weight: 500;
     font-size: 18px;
-}
-
-#tech-list li::marker {
-    color: #9C89B8;
-    display: inline-block;  
 }
 
 /* Contact */
